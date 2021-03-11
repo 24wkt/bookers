@@ -22,8 +22,8 @@
     <%= f.submit'Update Book' %>
   </div>
 
-<a><%= link_to"show",book_path(@book.id) %></a>
-<a>|</a>
-<a><%= link_to"Back",books_path %></a>
+<%= link_to"show",book_path(@book.id),class:"icon" %>
+|
+<%= link_to"Back",books_path,class:"icon" %>
 
 <% end %>
