@@ -24,7 +24,7 @@
     <td>
     <a><%= link_to"show",book_path(book.id) %></a>
     <a><%= link_to"edit",edit_book_path(book.id) %></a>
-    <a><%= link_to"destroy",book_path(book.id),method: :delete,"date-confirm" => "Are you sure ?" %></a>
+    <a><%= link_to"destroy",book_path(book.id),method: :delete, data: { confirm: "Are you sure ?" } %></a>
     </td>
     </tr>
 <% end %>

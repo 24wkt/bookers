@@ -8,14 +8,22 @@
       <% end %>
   <% end %>
 
-  <h4>title</h4>
-  <%= f.text_field :title %>
-  <h4>body</h4>
-  <%= f.text_area :body %>
+  <div class="field">
+    <label for="book_title">Title</label>
+      <%= f.text_field :title %>
+  </div>
 
-  <%= f.submit'Update Book' %>
+  <div class="field">
+    <label for="book_body">Body</label>
+      <%= f.text_area :body %>
+  </div>
 
-<%= link_to"show",book_path(@book.id) %>
-<%= link_to"Back",books_path %>
+  <div class="actions">
+    <%= f.submit'Update Book' %>
+  </div>
+
+<a><%= link_to"show",book_path(@book.id) %></a>
+<a>|</a>
+<a><%= link_to"Back",books_path %></a>
 
 <% end %>
